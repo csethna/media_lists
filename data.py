@@ -1,4 +1,6 @@
-import csv
+import os
 import pandas as import pd
 
-df = pd.read_csv('dctechnology.csv', delimiter = ',')
+CSV_PATH = os.path.join('dctechnology.csv')
+
+df = pd.read_csv(CSV_PATH)
